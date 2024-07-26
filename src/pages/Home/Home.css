@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;800&display=swap");
+body {
+  margin: 0px;
+}
+
+* {
+  font-family: "Montserrat";
+}
+
+.Home {
+  display: flex;
+  flex-direction: column;
+  padding-right: 80px;
+  padding-left: 80px;
+}
+.Homepicture {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Homepicture h1 {
+  position: absolute;
+  z-index: 1000;
+  color: white;
+  font-weight: 600;
+  text-shadow: 1px 1px 0 #000, -1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000;
+}
+.Homepicture img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 150px;
+  width: 100%;
+  border-radius: 20px;
+  filter: brightness(50%);
+  box-shadow: 2px 5px 5px lightgrey;
+}
+.Homecardspart {
+  display: flex;
+  background-color: #f6f6f6;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  border-radius: 20px;
+  flex-wrap: wrap;
+  padding: 2%;
+}
+.Homecardspart .Homecard {
+  display: flex;
+  position: relative;
+  width: 29%;
+  height: 250px;
+  border-radius: 10px;
+  margin: 2%;
+}
+.Homecardspart .Homecard a {
+  width: 100%;
+  height: 250px;
+  display: flex;
+}
+.Homecardspart .Homecard a p {
+  width: 80%;
+  position: absolute;
+  z-index: 2;
+  color: white;
+  padding-left: 10px;
+  padding-right: 10px;
+  align-self: end;
+  font-weight: 500;
+}
+.Homecardspart .Homecard a .shadow {
+  background: linear-gradient 180deg, rgba(255, 255, 255, 0), rgba(10, 10, 10, 0) 42%, rgba(4, 4, 4, 0.2039215686) 99.99%, rgba(0, 0, 0, 0.5019607843);
+  height: 250px;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  border-radius: 10px;
+}
+.Homecardspart .Homecard a img {
+  display: flex;
+  border-radius: 10px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 250px;
+}/*# sourceMappingURL=Home.css.map */

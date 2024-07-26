@@ -1,0 +1,16 @@
+.Footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: black;
+  height: 120px;
+  width: 100%;
+}
+.Footer img {
+  width: 100px;
+  padding: 20px 0px 10px 0px;
+}
+.Footer p {
+  color: white;
+}/*# sourceMappingURL=Footer.css.map */
