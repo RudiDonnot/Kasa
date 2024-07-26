@@ -5,12 +5,13 @@ import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 import { faChevronUp } from "@fortawesome/free-solid-svg-icons";
 
 function Retractcards(props) {
+  const [open, setOpen] = useState(false);
   return (
     <div>
-      <button className="retract-top-part">
+      <button className="retract-top-part" onClick={() => setOpen(!open)}>
         <div className="retract-top-part-content">
           <p className="retract-title">{props.title}</p>
-          <FontAwesomeIcon />
+          <FontAwesomeIcon icon={open ? faChevronDown : faChevronUp} />
         </div>
       </button>
       {open && (
