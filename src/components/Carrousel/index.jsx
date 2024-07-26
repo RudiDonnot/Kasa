@@ -27,38 +27,7 @@ const Carroussel = (props) => {
   };
 
   return (
-    <div className="Carrousel">
-      {pictures.length > 0 && (
-        <>
-          <img
-            src={pictures[index]}
-            alt="appartement"
-            className="Carrouselimg"
-          />
-          {pictures.length > 1 && (
-            <div className="arrowspart">
-              <FontAwesomeIcon
-                icon={faChevronLeft}
-                className="arrow-slide"
-                onClick={previous}
-              />
-              <FontAwesomeIcon
-                icon={faChevronRight}
-                className="arrow-slide"
-                onClick={next}
-              />
-            </div>
-          )}
-          {pictures.length > 1 && (
-            <div className="numberpart">
-              <span className="number">
-                {index + 1}/{pictures.length}
-              </span>
-            </div>
-          )}
-        </>
-      )}
-    </div>
+
   );
 };
 
