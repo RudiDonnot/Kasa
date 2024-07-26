@@ -67,7 +67,8 @@ body {
   font-weight: 500;
 }
 .Homecardspart .Homecard a .shadow {
-  background: linear-gradient 180deg, rgba(255, 255, 255, 0), rgba(10, 10, 10, 0) 42%, rgba(4, 4, 4, 0.2039215686) 99.99%, rgba(0, 0, 0, 0.5019607843);
+  background: rgb(240, 240, 240);
+  background: linear-gradient(0deg, rgb(240, 240, 240) 0%, rgba(70, 70, 70, 0.8407563709) 0%, rgba(70, 70, 70, 0.4205883037) 0%, rgb(58, 58, 58) 0%, rgb(59, 59, 59) 0%, rgb(57, 57, 57) 0%, rgb(59, 59, 59) 0%, rgb(56, 56, 56) 0%, rgba(41, 41, 41, 0.1376751384) 49%);
   height: 250px;
   position: absolute;
   z-index: 1;
