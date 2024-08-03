@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./retractcards.css";
+import "./retractcards.sass";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 import { faChevronUp } from "@fortawesome/free-solid-svg-icons";

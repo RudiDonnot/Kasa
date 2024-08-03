@@ -1,6 +1,7 @@
 import { faStar } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
+import "./Rating.sass";
 
 const Rating = (rating) => {
   const starnumber = [1, 2, 3, 4, 5];
@@ -12,13 +13,13 @@ const Rating = (rating) => {
           <FontAwesomeIcon
             key={id}
             icon={faStar}
-            style={{ color: "#ff6060" }}
+            className="redstar"
           ></FontAwesomeIcon>
         ) : (
           <FontAwesomeIcon
             key={id}
             icon={faStar}
-            style={{ color: "#e3e3e3" }}
+            className="greystar"
           ></FontAwesomeIcon>
         )
       )}

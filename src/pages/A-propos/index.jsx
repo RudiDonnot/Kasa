@@ -1,13 +1,13 @@
-import ImgApropos from "../../assets/ImgApropos.png";
 import Retractcards from "../../components/Retractcards/retractcards.jsx";
-import "./Apropos.css";
+import "./Apropos.sass";
+import Banner from "../../components/Banner";
+import BannerImg from "../../assets/ImgApropos.png";
 
 function Apropos() {
   return (
     <div className="Apropos">
-      <div className="Apropospicture">
-        <img src={ImgApropos} alt="" />
-      </div>
+      <Banner title={""} picture={BannerImg}></Banner>
+
       <div className="Aproposcards">
         <Retractcards
           title="Fiabilité"

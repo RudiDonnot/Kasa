@@ -1,10 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;800&display=swap");
 body {
-  margin: 0px;
+  display: flex;
+  justify-content: center;
 }
 
 * {
   font-family: "Montserrat";
+}
+
+#root {
+  flex-direction: column;
+  margin: 0px 80px 0px 80px;
+  max-width: 1024px;
 }
 
 .Home {
@@ -12,27 +19,6 @@ body {
   flex-direction: column;
   padding-right: 80px;
   padding-left: 80px;
-}
-.Homepicture {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.Homepicture h1 {
-  position: absolute;
-  z-index: 1000;
-  color: white;
-  font-weight: 600;
-  text-shadow: 1px 1px 0 #000, -1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000;
-}
-.Homepicture img {
-  -o-object-fit: cover;
-     object-fit: cover;
-  height: 150px;
-  width: 100%;
-  border-radius: 20px;
-  filter: brightness(50%);
-  box-shadow: 2px 5px 5px lightgrey;
 }
 .Homecardspart {
   display: flex;

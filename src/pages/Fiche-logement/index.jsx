@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
-import Logements from "../../components/Logements-info/logements.json";
+import Logements from "../../assets/logements.json";
 import Retractcards from "../../components/Retractcards/retractcards.jsx";
-import "./Fiche-logement.css";
+import "./Fiche-logement.sass";
 import { useParams } from "react-router-dom";
 import Rating from "../../components/Rating/index.jsx";
 import Carrousel from "../../components/Carrousel/index.jsx";
@@ -23,7 +23,7 @@ function Fichelogement() {
           <Carrousel pictures={logement?.pictures} />
           <div className="titre">
             <div className="leftpart">
-              <h2>{logement?.title}</h2>
+              <h1>{logement?.title}</h1>
               <p>{logement?.location}</p>
             </div>
             <div className="rightpart">
