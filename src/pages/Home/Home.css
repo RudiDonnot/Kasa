@@ -11,14 +11,12 @@ body {
 #root {
   flex-direction: column;
   margin: 0px 80px 0px 80px;
-  max-width: 1024px;
+  max-width: 1240px;
 }
 
 .Home {
   display: flex;
   flex-direction: column;
-  padding-right: 80px;
-  padding-left: 80px;
 }
 .Homecardspart {
   display: flex;
@@ -27,7 +25,6 @@ body {
   margin-bottom: 40px;
   border-radius: 20px;
   flex-wrap: wrap;
-  padding: 2%;
 }
 .Homecardspart .Homecard {
   display: flex;
@@ -35,7 +32,6 @@ body {
   width: 29%;
   height: 250px;
   border-radius: 10px;
-  margin: 2%;
 }
 .Homecardspart .Homecard a {
   width: 100%;
