@@ -9,12 +9,13 @@ body
 
 #root
   flex-direction: column
-  margin: 0px 80px 0px 80px
-  max-width: 1240px
+  margin: 0px
+  width: 1440px
 
 .Home
   display: flex
   flex-direction: column
+  margin: 0px 100px 0px 100px
 
   &cardspart
     display: flex
@@ -22,17 +23,21 @@ body
     margin-top: 40px
     margin-bottom: 40px
     border-radius: 20px
+    padding: 4%
     flex-wrap: wrap
+    gap: 60px 5%
+    justify-content: center
 
     .Homecard
       display: flex
       position: relative
-      width: 29%
-      height: 250px
+      width: 30%
+      height: 340px
       border-radius: 10px
+
       a
         width: 100%
-        height: 250px
+        height: 340px
         display: flex
         p
           width: 80%
@@ -44,10 +49,9 @@ body
           align-self: end
           font-weight: 500
         .shadow
-
           background: rgb(240,240,240)
           background: linear-gradient(0deg, rgba(240,240,240,1) 0%, rgba(70,70,70,0.8407563709077381) 0%, rgba(70,70,70,0.4205883036808473) 0%, rgba(58,58,58,1) 0%, rgba(59,59,59,1) 0%, rgba(57,57,57,1) 0%, rgba(59,59,59,1) 0%, rgba(56,56,56,1) 0%, rgba(41,41,41,0.13767513841474088) 49%)
-          height: 250px
+          height: 100%
           position: absolute
           z-index: 1
           width: 100%
@@ -57,4 +61,40 @@ body
           border-radius: 10px
           object-fit: cover
           width: 100%
-          height: 250px
+          height: 340px
+
+@media screen and (max-width: 1200px)
+  .Homecard
+    height: 200px !important
+    a
+      height: 200px !important
+      img
+        height: 200px !important
+
+@media screen and (max-width: 740px)
+
+  .Home
+    margin: 0px 20px 0px 20px
+  .Homecardspart
+    padding: 0
+    margin: 0
+    gap: 0
+    background-color: transparent
+
+    .Homecard
+      width: 100% !important
+      margin-top: 40px !important
+      height: 225px
+      a
+        height: 225px
+
+        p
+          font-size: 20px
+          width: 40% !important
+          padding-left: 30px !important
+
+        .shadow
+          height: 225px !important
+
+        img
+          height: 225px !important

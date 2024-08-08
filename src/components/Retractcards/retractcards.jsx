@@ -14,11 +14,7 @@ function Retractcards(props) {
           <FontAwesomeIcon icon={open ? faChevronDown : faChevronUp} />
         </div>
       </button>
-      {open && (
-        <div className="retract-bottom-part">
-          <p className="retract-content">{props.content}</p>
-        </div>
-      )}
+      {open && <div className="retract-bottom-part">{props.content}</div>}
     </div>
   );
 }

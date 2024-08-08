@@ -9,16 +9,23 @@
         position: absolute
         z-index: 1000
         color: white
-        font-weight: 600
-        text-shadow: 1px 1px 0 #000, -1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000
-        white-space: nowrap
-        overflow: hidden
-        text-overflow: ellipsis
-
+        font-weight: 700
+        font-size: 48px
+        text-shadow: 2px 2px 0 #000, -2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000
+        margin: 10%
     img
         object-fit: cover
-        height: 150px
+        height: 223px
         width: 100%
         border-radius: 20px
         filter: brightness(50%)
         box-shadow: 2px 5px 5px lightgrey
+
+@media screen and (max-width: 740px)
+    .picture
+        img
+            height: 110px
+        h1
+            font-size: 24px
+            margin: 10% !important
+            text-shadow: none !important

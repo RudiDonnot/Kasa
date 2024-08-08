@@ -1,60 +1,68 @@
 .Logementpart
-  margin-left: 5%
-  margin-right: 5%
+  margin: 0px 100px 0px 100px
 
   .titre
     display: flex
     justify-content: space-between
+    margin: 20px 0px 0px 0px
 
     .leftpart
+      display: flex
+      flex-direction: column
+      h1
+        color: #ff6060
+        font-size: 36px
+        font-weight: 500
+        margin: 10px 0px 10px 0px
 
       h2
-        color: #ff6060
-        font-size: 35px
-        margin-bottom: 10px
-        font-weight: 500
-
-      p
-        font-size: 20px
+        font-size: 18px
         margin: 0px
         font-weight: 400
+        margin: 5px 0px 10px 0px
+
+      .tags
+        display: flex
+        align-items: center
+        flex-wrap: wrap
+        height: 70px
+
+        .tag
+          display: flex
+          align-items: center
+          justify-self: center
+          border-radius: 10px
+          margin: 0px 20px 0px 0px
+          padding: 4px 30px 4px 30px
+          background-color: #ff6060
+          color: white
+          font-weight: 600
+          font-size: 14px
 
     .rightpart
       margin-top: 20px
       display: flex
+      flex-direction: column
 
-      .hostname
-        color: #ff6060
-        font-size: 25px
-        margin-top: 0px
+      .hostinfos
+        display: flex
+        margin-bottom: 30px
 
-      .hostpicture
-        margin-left: 20px
-        height: 60px
-        width: 60px
-        border-radius: 30px
+        .hostname
+          color: #ff6060
+          font-size: 18px
+          margin-top: 0px
 
-  .tagsrating
-    display: flex
-    justify-content: space-between
+        .hostpicture
+          margin-left: 20px
+          height: 64px
+          width: 64px
+          border-radius: 30px
 
-    .tags
-      display: flex
-
-      .tag
-        justify-self: center
-        border-radius: 10px
-        margin-right: 20px
-        padding: 2px 30px 2px 30px
-        background-color: #ff6060
-        color: white
-        font-weight: 500
-        font-size: 14px
-
-    .rating
-      img
-        width: 30px
-        height: 30px
+        .rating
+          img
+            width: 30px
+            height: 30px
 
   .descriptionequipement
     display: flex
@@ -66,3 +74,46 @@
 
     .equipement
       width: 48%
+
+@media screen and (max-width: 740px)
+
+  .Logementpart
+    margin: 0px 20px 0px 20px
+    .titre
+      display: flex
+      flex-direction: column
+      .leftpart
+        display: flex
+        flex-direction: column
+        h1
+          font-size: 18px
+        h2
+          font-size: 14px
+          margin: 5px 0px 0px 0px
+        .tags
+          height: 50px
+          .tag
+            font-size: 10px !important
+            padding: 1px 20px 1px 20px !important
+            margin: 0px 10px 0px 0px !important
+
+      .rightpart
+        flex-direction: row-reverse
+        justify-content: space-between
+        margin-top: 0px
+        .hostinfos
+          margin-bottom: 0px
+          .hostname
+            margin-bottom: 10px
+          .hostpicture
+            margin-left: 20px !important
+            height: 32px !important
+            width: 32px !important
+            border-radius: 30px !important
+
+  .descriptionequipement
+    flex-direction: column
+    .description
+      width: 100% !important
+    .equipement
+      width: 100% !important

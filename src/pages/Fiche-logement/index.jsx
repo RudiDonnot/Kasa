@@ -24,45 +24,41 @@ function Fichelogement() {
           <div className="titre">
             <div className="leftpart">
               <h1>{logement?.title}</h1>
-              <p>{logement?.location}</p>
+              <h2>{logement?.location}</h2>
+              <div className="tags">
+                {logement?.tags.map((tags, index) => {
+                  return (
+                    <div key={index}>
+                      <p className="tag">{tags}</p>
+                    </div>
+                  );
+                })}
+              </div>
             </div>
             <div className="rightpart">
-              <p className="hostname">{logement?.host.name}</p>
-              <img
-                className="hostpicture"
-                src={logement?.host.picture}
-                alt=""
-              ></img>
+              <div className="hostinfos">
+                <p className="hostname">{logement?.host.name}</p>
+                <img
+                  className="hostpicture"
+                  src={logement?.host.picture}
+                  alt=""
+                ></img>
+              </div>
+              <Rating rating={logement?.rating} />
             </div>
-          </div>
-          <div className="tagsrating">
-            <div className="tags">
-              {logement?.tags.map((tags, index) => {
-                return (
-                  <div key={index}>
-                    <p className="tag">{tags}</p>
-                  </div>
-                );
-              })}
-            </div>
-            <Rating rating={logement?.rating} />
           </div>
           <div className="descriptionequipement">
             <div className="description">
               <Retractcards
                 title="Description"
-                content={logement?.description}
+                content={<p>{logement?.description}</p>}
               />
             </div>
             <div className="equipement">
               <Retractcards
                 title="Equipement"
                 content={logement?.equipments.map((item, index) => {
-                  return (
-                    <div key={index}>
-                      <p>{item}</p>
-                    </div>
-                  );
+                  return <li key={index}>{item}</li>;
                 })}
                 className="vignette"
               />
