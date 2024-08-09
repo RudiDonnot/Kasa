@@ -37,7 +37,10 @@ function Fichelogement() {
             </div>
             <div className="rightpart">
               <div className="hostinfos">
-                <p className="hostname">{logement?.host.name}</p>
+                <div className="hostname">
+                  <p>{logement?.host.name.split(" ")[0]}</p>
+                  <p>{logement?.host.name.split(" ")[1]}</p>
+                </div>
                 <img
                   className="hostpicture"
                   src={logement?.host.picture}
