@@ -9,13 +9,13 @@ function Header() {
       <div className="Headerrightpart" alt="">
         <NavLink
           className={(state) => (state.isActive ? "actualpage" : "otherpage")}
-          to="/"
+          to="/Kasa"
         >
           Accueil
         </NavLink>
         <NavLink
           className={(state) => (state.isActive ? "actualpage" : "otherpage")}
-          to="/A-propos"
+          to="/Kasa/A-propos"
         >
           A Propos
         </NavLink>
